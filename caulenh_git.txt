@@ -5,3 +5,14 @@ composer create-project --prefer-dist laravel/laravel shopbanhanglaravel
 php artisan make:migration create_tbl_admin_table --create=tbl_admin
 // thực thi tạo cơ sở dữ liệu 
 php artisan migrate
+// tao controller Category
+php artisan make:controller CategoryProduct
+
+// tai shoppingcart https://github.com/hardevine/LaravelShoppingcart
+composer require hardevine/shoppingcart
+// import export excel
+Cài đặt composer require maatwebsite/excel
+Copy 2 file vào folder app
+Maatwebsite\Excel\ExcelServiceProvider::class,
+Maatwebsite\Excel\Facades\Excel::class,
+
